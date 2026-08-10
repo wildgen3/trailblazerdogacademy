@@ -1,0 +1,289 @@
+[
+  {
+    "filename": "hero_01_main.jpg",
+    "section": "hero",
+    "priority": "primary",
+    "title": "Hero \u2014 Main",
+    "description": "Kneeling handler and tan/white dog, warm eye contact, open field at golden hour.",
+    "alt_text": "Trainer kneeling in a grass field, warmly greeting a happy tan and white dog on leash.",
+    "keywords": [
+      "hero",
+      "homepage",
+      "connection",
+      "primary"
+    ],
+    "source_original": "IMG_0605.JPG"
+  },
+  {
+    "filename": "hero_02_alt.jpg",
+    "section": "hero",
+    "priority": "secondary",
+    "title": "Hero \u2014 Alt Framing",
+    "description": "Same session as hero_01, alternate crop/framing.",
+    "alt_text": "Trainer and tan and white dog greeting each other in an open field.",
+    "keywords": [
+      "hero",
+      "homepage",
+      "connection",
+      "alt"
+    ],
+    "source_original": "IMG_0587.JPG"
+  },
+  {
+    "filename": "hero_03_nuzzle.jpg",
+    "section": "hero",
+    "priority": "secondary",
+    "title": "Hero \u2014 Nuzzle",
+    "description": "Handler nuzzling a grey/tan dog on a park bench, tattoos visible, red striped shirt.",
+    "alt_text": "Man affectionately nuzzling a grey and tan dog while sitting on a bench outdoors.",
+    "keywords": [
+      "hero",
+      "connection",
+      "warmth",
+      "alt"
+    ],
+    "source_original": "IMG_8898.JPG"
+  },
+  {
+    "filename": "hero_04_nuzzle_alt.jpg",
+    "section": "hero",
+    "priority": "tertiary",
+    "title": "Hero \u2014 Nuzzle Alt",
+    "description": "Alternate frame of the bench nuzzle moment.",
+    "alt_text": "Man and dog sharing an affectionate moment on a park bench.",
+    "keywords": [
+      "hero",
+      "connection",
+      "warmth",
+      "alt"
+    ],
+    "source_original": "IMG_8889.JPG"
+  },
+  {
+    "filename": "about_01_portrait.jpg",
+    "section": "about",
+    "priority": "primary",
+    "title": "About \u2014 Ryan Portrait",
+    "description": "Genuine smile, dog close to face, no gear, credibility-friendly.",
+    "alt_text": "Ryan smiling warmly with a black and white dog close to his shoulder, outdoor field background.",
+    "keywords": [
+      "about",
+      "ryan",
+      "portrait",
+      "credibility"
+    ],
+    "source_original": "IMG_1403-3264.JPG"
+  },
+  {
+    "filename": "about_02_portrait_alt.jpg",
+    "section": "about",
+    "priority": "secondary",
+    "title": "About \u2014 Ryan Portrait Alt",
+    "description": "Alternate frame of the same portrait moment.",
+    "alt_text": "Ryan smiling with a black and white dog, outdoor field background.",
+    "keywords": [
+      "about",
+      "ryan",
+      "portrait",
+      "alt"
+    ],
+    "source_original": "IMG_1423-3264.JPG"
+  },
+  {
+    "filename": "about_03_smile_alt.jpg",
+    "section": "about",
+    "priority": "tertiary",
+    "title": "About \u2014 Casual Alt (setting mismatch)",
+    "description": "Park/waterfall setting \u2014 do not caption as the 33-acre property.",
+    "alt_text": "Ryan smiling with a grey and tan dog in front of rocks and greenery.",
+    "keywords": [
+      "about",
+      "ryan",
+      "portrait",
+      "caution-setting"
+    ],
+    "source_original": "IMG_9101.JPG"
+  },
+  {
+    "filename": "boardtrain_01_paw.jpg",
+    "section": "programs",
+    "priority": "primary \u2014 4-Week On-Leash Board & Train",
+    "title": "Program \u2014 On-Leash Paw/Bond",
+    "description": "Hand-and-paw moment, everyday companion-skill energy.",
+    "alt_text": "Trainer and dog sharing a paw-shake moment, representing everyday obedience skills.",
+    "keywords": [
+      "programs",
+      "on-leash",
+      "board-and-train",
+      "bond"
+    ],
+    "source_original": "IMG_0391-3264.JPG"
+  },
+  {
+    "filename": "boardtrain_02_paw_alt.jpg",
+    "section": "programs",
+    "priority": "secondary \u2014 4-Week On-Leash Board & Train",
+    "title": "Program \u2014 On-Leash Paw/Bond Alt",
+    "description": "Alternate frame of the paw/bond moment.",
+    "alt_text": "Trainer and dog sharing a paw-shake moment outdoors.",
+    "keywords": [
+      "programs",
+      "on-leash",
+      "board-and-train",
+      "alt"
+    ],
+    "source_original": "IMG_0399-3264.JPG"
+  },
+  {
+    "filename": "obedience_01_alert_sit.jpg",
+    "section": "programs",
+    "priority": "secondary \u2014 6-Week Off-Leash Board & Train",
+    "title": "Program \u2014 Off-Leash Alert Sit",
+    "description": "Attentive sit, focus and control read clearly.",
+    "alt_text": "Alert dog sitting attentively in a grass field, ears up, focused on handler.",
+    "keywords": [
+      "programs",
+      "off-leash",
+      "obedience",
+      "focus"
+    ],
+    "source_original": "IMG_0487-3264.JPG"
+  },
+  {
+    "filename": "obedience_02_portrait.jpg",
+    "section": "programs",
+    "priority": "spare / section header",
+    "title": "Program \u2014 Attentive Portrait (flex)",
+    "description": "Flexible spare \u2014 Programs section header or off-leash tertiary alt.",
+    "alt_text": "Close portrait of an alert working-breed dog looking upward, purple collar.",
+    "keywords": [
+      "programs",
+      "flex",
+      "header-candidate"
+    ],
+    "source_original": "IMG_0498-3264.JPG"
+  },
+  {
+    "filename": "obedience_03_distance_sit.jpg",
+    "section": "programs",
+    "priority": "primary \u2014 6-Week Off-Leash Board & Train",
+    "title": "Program \u2014 Off-Leash Distance Sit",
+    "description": "Distance and control read clearly, fits off-leash proofing positioning.",
+    "alt_text": "Dog holding a sit at a distance from handler across an open field, demonstrating off-leash control.",
+    "keywords": [
+      "programs",
+      "off-leash",
+      "obedience",
+      "distance",
+      "primary"
+    ],
+    "source_original": "IMG_0510-3264.JPG"
+  },
+  {
+    "filename": "daycare_01_fetch.jpg",
+    "section": "programs",
+    "priority": "primary \u2014 Boarding & Daycare",
+    "title": "Program \u2014 Daycare Fetch",
+    "description": "Playful energy, matches pup-cups/frozen-kongs/playtime language.",
+    "alt_text": "Dog joyfully retrieving a ball while handler tosses it, playful daycare energy.",
+    "keywords": [
+      "programs",
+      "daycare",
+      "boarding",
+      "play",
+      "primary"
+    ],
+    "source_original": "IMG_1227-3264.JPG"
+  },
+  {
+    "filename": "daycare_02_fetch_alt.jpg",
+    "section": "programs",
+    "priority": "tertiary \u2014 Boarding & Daycare",
+    "title": "Program \u2014 Daycare Fetch Alt",
+    "description": "Alternate frame of the fetch sequence.",
+    "alt_text": "Dog retrieving a ball in an open field, playful motion.",
+    "keywords": [
+      "programs",
+      "daycare",
+      "boarding",
+      "play",
+      "alt"
+    ],
+    "source_original": "IMG_1248-3264.JPG"
+  },
+  {
+    "filename": "daycare_03_relaxed_deck.jpg",
+    "section": "programs",
+    "priority": "secondary \u2014 Boarding & Daycare",
+    "title": "Program \u2014 Daycare Relaxed",
+    "description": "Calmer mood, good for the overnight-comfort side of boarding.",
+    "alt_text": "Relaxed dog lying comfortably on a wooden deck, calm boarding atmosphere.",
+    "keywords": [
+      "programs",
+      "daycare",
+      "boarding",
+      "calm"
+    ],
+    "source_original": "IMG_8756.JPG"
+  },
+  {
+    "filename": "protection_01_engage.jpg",
+    "section": "working",
+    "priority": "primary",
+    "title": "Working \u2014 Decoy Engagement",
+    "description": "Decoy/bite-work documentation, French Ring credibility.",
+    "alt_text": "Trainer in protective gear working a dog through a controlled bite-sleeve engagement.",
+    "keywords": [
+      "working",
+      "protection",
+      "french-ring",
+      "credibility"
+    ],
+    "source_original": "IMG_0618-3264.JPG"
+  },
+  {
+    "filename": "protection_02_action.jpg",
+    "section": "working",
+    "priority": "secondary",
+    "title": "Working \u2014 Decoy Action",
+    "description": "Dynamic action frame of decoy/bite work.",
+    "alt_text": "Dog in mid-action during a controlled protection-sport training exercise.",
+    "keywords": [
+      "working",
+      "protection",
+      "french-ring",
+      "action"
+    ],
+    "source_original": "IMG_0793-3264.JPG"
+  },
+  {
+    "filename": "protection_03_drive.jpg",
+    "section": "working",
+    "priority": "secondary",
+    "title": "Working \u2014 Drive/Tug",
+    "description": "High-drive tug engagement on line, dynamic motion.",
+    "alt_text": "Dog in harness engaging a tug toy at full drive during training.",
+    "keywords": [
+      "working",
+      "protection",
+      "drive",
+      "action"
+    ],
+    "source_original": "IMG_9549-3264.JPG"
+  },
+  {
+    "filename": "protection_04_bridge_bond.jpg",
+    "section": "working",
+    "priority": "transition",
+    "title": "Working \u2014 Bridge to Bond",
+    "description": "Handler embracing dog just off a working session \u2014 transition image out of the Working section.",
+    "alt_text": "Handler warmly holding a working dog just after a training session, softer transition moment.",
+    "keywords": [
+      "working",
+      "transition",
+      "bond",
+      "bridge"
+    ],
+    "source_original": "IMG_9433-3264.JPG"
+  }
+]

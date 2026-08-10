@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  section { scroll-margin-top: 74px; }
+  a { color: #A8672E; text-decoration: none; }
+  a:hover { color: #9C3B2B; }
+  ::selection { background: #A8672E; color: #E9E3D4; }
+  input::placeholder, textarea::placeholder { color: #7c8873; }
+  input, textarea, button { max-width: 100%; }
+  img { max-width: 100%; }
+  @media (max-width: 900px) {
+    [data-r="grid"] { grid-template-columns: 1fr !important; gap: 34px !important; }
+    [data-r="pad"] { padding-top: 68px !important; padding-bottom: 68px !important; }
+    [data-r="navlinks"] { display: none !important; }
+    [data-r="mosaic"] { grid-auto-rows: 180px !important; }
+    [data-r="cta"] { padding: 30px 26px !important; gap: 26px !important; }
+    [data-r="cta"] a { white-space: normal !important; font-size: 17px !important; padding: 17px 24px !important; }
+    [data-r="form"] { padding: 26px 22px !important; }
+  }
+  @media (max-width: 560px) {
+    [data-r="pad"] { padding-left: 20px !important; padding-right: 20px !important; }
+    [data-r="mosaic"] { grid-template-columns: 1fr !important; grid-auto-rows: 220px !important; }
+    [data-r="mosaic"] > * { grid-row: auto !important; }
+    [data-r="hero-actions"] a { width: 100% !important; text-align: center !important; }
+    [data-r="cta"] a { width: 100% !important; justify-content: center !important; }
+  }
+</style>
+</helmet>
+<div style="font-family: 'Source Serif 4', Georgia, serif; color: #1B1A16; background: #E9E3D4; overflow-x: hidden;">
+
+  <!-- NAV -->
+  <header style="position: sticky; top: 0; z-index: 50; background: #1B1A16; border-bottom: 2px solid #A8672E;">
+    <nav style="max-width: 1200px; margin: 0 auto; padding: 0 28px; height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+      <a href="#top" style="display: flex; align-items: center; gap: 13px; color: #E9E3D4;">
+        <span style="width: 15px; height: 34px; background: #A8672E; transform: skewX(-11deg); display: block;"></span>
+        <span style="font-family: 'Big Shoulders Display'; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 21px; line-height: 0.92;">Trailblazer<br><span style="font-family: 'IBM Plex Mono'; font-size: 10px; font-weight: 400; letter-spacing: 0.3em; color: #A8672E;">DOG ACADEMY</span></span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 28px;">
+        <div data-r="navlinks" style="display: flex; gap: 24px; font-family: 'IBM Plex Mono'; letter-spacing: 0.12em; text-transform: uppercase; font-size: 12px;">
+          <a href="#about" style="color: #E9E3D4;">About</a>
+          <a href="#programs" style="color: #E9E3D4;">Programs</a>
+          <a href="#working" style="color: #E9E3D4;">The Work</a>
+          <a href="#contact" style="color: #E9E3D4;">Contact</a>
+        </div>
+        <a href="tel:8303680790" style="font-family: 'Big Shoulders Display'; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; font-size: 15px; color: #1B1A16; background: #A8672E; padding: 10px 18px;">830-368-0790</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" style="position: relative; background: #1B1A16; color: #E9E3D4;">
+    <div style="position: absolute; inset: 0; overflow: hidden;">
+      <img src="uploads/trailblazer_photos_curated/hero/hero_01_main.jpg" alt="Trainer kneeling in a grass field, warmly greeting a happy tan and white dog on leash." style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% center;">
+      <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(27,26,22,0.94) 0%, rgba(27,26,22,0.78) 42%, rgba(27,26,22,0.28) 100%);"></div>
+    </div>
+    <div data-r="pad" style="position: relative; max-width: 1200px; margin: 0 auto; padding: 120px 28px 128px; min-height: 600px; display: flex; align-items: center;">
+      <div style="max-width: 640px;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+          <span style="width: 11px; height: 24px; background: #A8672E; transform: skewX(-11deg); display: block;"></span>
+          <span style="font-family: 'IBM Plex Mono'; letter-spacing: 0.24em; text-transform: uppercase; font-size: 12px; color: #A8672E;">Board &amp; Train · Behavior · Boarding</span>
+        </div>
+        <h1 style="font-family: 'Big Shoulders Display'; font-weight: 800; font-size: clamp(46px, 7vw, 84px); line-height: 0.93; margin: 0 0 24px; text-transform: uppercase; letter-spacing: 0.005em;">The dog you<br>hoped for is<br>still in there</h1>
+        <p style="font-size: 19px; line-height: 1.62; color: #d8d1c1; margin: 0 0 34px; max-width: 520px;">Board-and-train and behavior work from a trainer who has been exactly where you are. Reactive, anxious, aggressive, or just untrained — we build the relationship back, one honest step at a time.</p>
+        <div data-r="hero-actions" style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center;">
+          <a href="#programs" style="font-family: 'Big Shoulders Display'; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; font-size: 16px; color: #1B1A16; background: #A8672E; padding: 15px 28px;">See the programs</a>
+          <a href="tel:8303680790" style="font-family: 'Big Shoulders Display'; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; font-size: 16px; color: #E9E3D4; border: 1.5px solid #6a6455; padding: 15px 28px;">Call any time · 830-368-0790</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIAL STRIP -->
+  <div style="background: #A8672E; color: #1B1A16;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 18px 28px; display: flex; flex-wrap: wrap; gap: 12px 44px; justify-content: center; font-family: 'IBM Plex Mono'; letter-spacing: 0.12em; text-transform: uppercase; font-size: 12.5px;">
+      <span>2-Year Live-In Apprenticeship</span>
+      <span style="opacity: 0.4;">/</span>
+      <span>Military &amp; Police K9</span>
+      <span style="opacity: 0.4;">/</span>
+      <span>French Ring Competitor</span>
+      <span style="opacity: 0.4;">/</span>
+      <span>33-Acre Texas Property</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" data-r="pad" style="max-width: 1200px; margin: 0 auto; padding: 104px 28px;">
+    <div data-r="grid" style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 64px; align-items: start;">
+      <div>
+        <div style="display: flex; align-items: center; gap: 11px; margin-bottom: 18px;">
+          <span style="width: 9px; height: 20px; background: #A8672E; transform: skewX(-11deg); display: block;"></span>
+          <span style="font-family: 'IBM Plex Mono'; letter-spacing: 0.2em; text-transform: uppercase; font-size: 11px; color: #9C3B2B;">01 · The Story</span>
+        </div>
+        <h2 style="font-family: 'Big Shoulders Display'; font-weight: 700; font-size: clamp(34px, 4.6vw, 54px); line-height: 0.98; margin: 0 0 26px; text-transform: uppercase;">Hi, I'm Ryan</h2>
+        <div style="font-size: 17.5px; line-height: 1.74; color: #35332b; display: flex; flex-direction: column; gap: 18px;">
+          <p style="margin: 0;">If you've struggled with unwanted behaviors, or you just want the kind of bond with your dog you see in the movies — you're not alone. I was once exactly where you are.</p>
+          <p style="margin: 0;">I've loved dogs my whole life. At nine I taught our family's rottweiler mix to heel after watching my mom get dragged down the street. Later, my border collie Zeppelin and pittie mix Whiskey walked at my side for 832 miles across Arizona, 1,800+ miles of the Pacific Crest Trail, and countless other adventures.</p>
+          <p style="margin: 0;">Then in 2018 I brought home Skookums, a malinois, at eight weeks old — and quickly learned I didn't know as much as I thought. He was reactive to people, bikes, skateboards, anything fast or new. After months of trying everything online with no results, I reached out to a professional trainer. It was hands down the best thing I ever did.</p>
+          <p style="margin: 0;">That led me to a protection-sport club, mentorship under a training director with 40 years of experience, and a two-year live-in apprenticeship. Since then I've worked across the country with military and police K9, pet obedience, and behavior modification. Skookums went on to compete in French Ring — calm enough to be examined by a stranger.</p>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px; position: sticky; top: 96px;">
+        <div style="aspect-ratio: 4/5; overflow: hidden;">
+          <img src="uploads/trailblazer_photos_curated/about/about_01_portrait.jpg" alt="Ryan smiling warmly with a black and white dog close to his shoulder." style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="background: #1B1A16; color: #E9E3D4; padding: 24px 26px;">
+          <div style="font-family: 'Big Shoulders Display'; font-weight: 700; font-size: 26px; line-height: 1.05; text-transform: uppercase; color: #A8672E; margin-bottom: 6px;">I've been there</div>
+          <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: #cfc8b8;">I know what it's like to feel frustrated and doubt your relationship with your dog. I also know how good it feels on the other side.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section style="background: #4B5A42; color: #E9E3D4;">
+    <div data-r="pad" style="max-width: 960px; margin: 0 auto; padding: 92px 28px; text-align: center;">
+      <div style="font-family: 'IBM Plex Mono'; letter-spacing: 0.24em; text-transform: uppercase; font-size: 12px; color: #D8CBA0; margin-bottom: 22px;">Our Philosophy</div>
+      <p style="font-family: 'Big Shoulders Display'; font-weight: 500; font-size: clamp(26px, 3.6vw, 42px); line-height: 1.28; margin: 0 0 26px; text-transform: uppercase;">We build a language your dog and the person holding the leash both understand — when it's time to be a dog, and when it's time to settle.</p>
+      <p style="font-size: 17px; line-height: 1.7; color: #dcd8c9; max-width: 700px; margin: 0 auto;">From fearful, reactive, and aggressive dogs to happy-go-lucky puppies who just need guidance, the focus is always the same: a better bond and relationship with your best friend.</p>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" data-r="pad" style="max-width: 1200px; margin: 0 auto; padding: 104px 28px;">
+    <div style="display: flex; align-items: center; gap: 11px; margin-bottom: 18px;">
+      <span style="width: 9px; height: 20px; background: #A8672E; transform: skewX(-11deg); display: block;"></span>
+      <span style="font-family: 'IBM Plex Mono'; letter-spacing: 0.2em; text-transform: uppercase; font-size: 11px; color: #9C3B2B;">02 · Programs</span>
+    </div>
+    <h2 style="font-family: 'Big Shoulders Display'; font-weight: 700; font-size: clamp(34px, 4.6vw, 54px); line-height: 0.98; margin: 0 0 48px; text-transform: uppercase; max-width: 780px;">Three ways to build a better dog</h2>
+    <div data-r="grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+
+      <div style="background: #fff; border: 1px solid #d8cfba; display: flex; flex-direction: column;">
+        <div style="aspect-ratio: 16/11; overflow: hidden;"><img src="uploads/trailblazer_photos_curated/programs/boardtrain_01_paw.jpg" alt="Trainer and dog sharing a paw-shake moment, representing everyday obedience skills." style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="padding: 28px; display: flex; flex-direction: column; flex: 1;">
+          <span style="align-self: flex-start; font-family: 'IBM Plex Mono'; letter-spacing: 0.1em; text-transform: uppercase; font-size: 11px; color: #1B1A16; background: #A8672E; padding: 6px 11px; margin-bottom: 16px;">4 Weeks · Most Popular</span>
+          <h3 style="font-family: 'Big Shoulders Display'; font-weight: 600; font-size: 25px; margin: 0 0 12px; text-transform: uppercase; line-height: 1.08;">On-Leash Obedience Board &amp; Train</h3>
+          <p style="font-size: 15.5px; line-height: 1.62; color: #45433b; margin: 0;">Our most popular program for the everyday owner. Your dog learns the life skills to be a great companion — a shared language for when to be expressive and when to settle down for a movie night or a meal on the patio.</p>
+        </div>
+      </div>
+
+      <div style="background: #fff; border: 1px solid #d8cfba; display: flex; flex-direction: column;">
+        <div style="aspect-ratio: 16/11; overflow: hidden;"><img src="uploads/trailblazer_photos_curated/programs/obedience_03_distance_sit.jpg" alt="Dog holding a sit at a distance from handler across an open field, demonstrating off-leash control." style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="padding: 28px; display: flex; flex-direction: column; flex: 1;">
+          <span style="align-self: flex-start; font-family: 'IBM Plex Mono'; letter-spacing: 0.1em; text-transform: uppercase; font-size: 11px; color: #E9E3D4; background: #4B5A42; padding: 6px 11px; margin-bottom: 16px;">6 Weeks · Off-Leash</span>
+          <h3 style="font-family: 'Big Shoulders Display'; font-weight: 600; font-size: 25px; margin: 0 0 12px; text-transform: uppercase; line-height: 1.08;">Off-Leash Obedience Board &amp; Train</h3>
+          <p style="font-size: 15.5px; line-height: 1.62; color: #45433b; margin: 0;">For owners who want a little more, and ideal for large properties. Everything in the 4-week program, with every behavior proofed off-leash — for off-leash hiking, running the beach, or a game of fetch and a swim at the lake.</p>
+        </div>
+      </div>
+
+      <div style="background: #fff; border: 1px solid #d8cfba; display: flex; flex-direction: column;">
+        <div style="aspect-ratio: 16/11; overflow: hidden;"><img src="uploads/trailblazer_photos_curated/programs/daycare_01_fetch.jpg" alt="Dog joyfully retrieving a ball while handler tosses it, playful daycare energy." style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="padding: 28px; display: flex; flex-direction: column; flex: 1;">
+          <span style="align-self: flex-start; font-family: 'IBM Plex Mono'; letter-spacing: 0.1em; text-transform: uppercase; font-size: 11px; color: #1B1A16; border: 1.5px solid #4B5A42; padding: 6px 11px; margin-bottom: 16px;">Boarding &amp; Daycare</span>
+          <h3 style="font-family: 'Big Shoulders Display'; font-weight: 600; font-size: 25px; margin: 0 0 12px; text-transform: uppercase; line-height: 1.08;">A Vacation For Your Dog</h3>
+          <p style="font-size: 15.5px; line-height: 1.62; color: #45433b; margin: 0;">Heading out of town? Send your dog on vacation too — pup cups, frozen Kongs, and playtime. Shy pup? One-on-one time or a sniffari with our professional trainers, not kennel staff.</p>
+        </div>
+      </div>
+
+    </div>
+    <div data-r="cta" style="margin-top: 52px; background: #1B1A16; border-left: 9px solid #A8672E; padding: 38px 40px; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 280px;">
+        <div style="font-family: 'IBM Plex Mono'; letter-spacing: 0.2em; text-transform: uppercase; font-size: 11px; color: #D8CBA0; margin-bottom: 12px;">Not sure where to start?</div>
+        <div style="font-family: 'Big Shoulders Display'; font-weight: 700; font-size: clamp(26px, 3vw, 36px); line-height: 1.05; text-transform: uppercase; color: #E9E3D4;">Tell us about your dog — we'll tell you which program fits.</div>
+      </div>
+      <a href="#contact" style="font-family: 'Big Shoulders Display'; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 19px; color: #1B1A16; background: #A8672E; padding: 20px 34px; display: inline-flex; align-items: center; gap: 14px; white-space: nowrap; box-shadow: 6px 6px 0 #9C3B2B; transition: transform .18s ease, box-shadow .18s ease;" style-hover="transform: translate(-3px, -3px); box-shadow: 9px 9px 0 #9C3B2B;">Ask which program fits your dog <span style="font-size: 22px; line-height: 1;">→</span></a>
+    </div>
+  </section>
+
+  <!-- THE WORK -->
+  <section id="working" style="background: #1B1A16; color: #E9E3D4;">
+    <div data-r="pad" style="max-width: 1200px; margin: 0 auto; padding: 104px 28px;">
+      <div style="display: flex; align-items: center; gap: 11px; margin-bottom: 18px;">
+        <span style="width: 9px; height: 20px; background: #A8672E; transform: skewX(-11deg); display: block;"></span>
+        <span style="font-family: 'IBM Plex Mono'; letter-spacing: 0.2em; text-transform: uppercase; font-size: 11px; color: #A8672E;">03 · The Work</span>
+      </div>
+      <div data-r="grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 44px;">
+        <h2 style="font-family: 'Big Shoulders Display'; font-weight: 700; font-size: clamp(34px, 4.6vw, 54px); line-height: 0.98; margin: 0; text-transform: uppercase;">Earned in protection sport</h2>
+        <p style="font-size: 16.5px; line-height: 1.7; color: #cfc8b8; margin: 0;">The methods behind every program were pressure-tested in French Ring — obedience, agility, and controlled protection work. It's where drive, clarity, and trust either hold up or they don't. This is the deep end, and it's where the fundamentals come from.</p>
+      </div>
+      <div data-r="mosaic" style="display: grid; grid-template-columns: 2fr 1fr; gap: 16px; grid-auto-rows: 240px;">
+        <div style="overflow: hidden; grid-row: span 2;"><img src="uploads/trailblazer_photos_curated/working/protection_01_engage.jpg" alt="Trainer in protective gear working a dog through a controlled bite-sleeve engagement." style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="overflow: hidden;"><img src="uploads/trailblazer_photos_curated/working/protection_03_drive.jpg" alt="Dog in harness engaging a tug toy at full drive during training." style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="overflow: hidden;"><img src="uploads/trailblazer_photos_curated/working/protection_02_action.jpg" alt="Dog in mid-action during a controlled protection-sport training exercise." style="width: 100%; height: 100%; object-fit: cover;"></div>
+      </div>
+      <div data-r="grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-top: 56px; padding-top: 48px; border-top: 1px solid #33312a;">
+        <div style="aspect-ratio: 3/2; overflow: hidden;"><img src="uploads/trailblazer_photos_curated/working/protection_04_bridge_bond.jpg" alt="Handler warmly holding a working dog just after a training session." style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div>
+          <p style="font-family: 'Big Shoulders Display'; font-weight: 500; font-size: clamp(24px, 3vw, 34px); line-height: 1.22; margin: 0 0 16px; text-transform: uppercase; color: #E9E3D4;">The hardest work always ends the same way — back in a bond.</p>
+          <p style="font-size: 16px; line-height: 1.7; color: #cfc8b8; margin: 0;">Intensity is never the point. Whether it's a competition dog or the family pet, everything comes back to a dog who trusts the person holding the leash.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background: #E9E3D4;">
+    <div data-r="pad" style="max-width: 1100px; margin: 0 auto; padding: 104px 28px;">
+      <div data-r="grid" style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: start;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 11px; margin-bottom: 18px;">
+            <span style="width: 9px; height: 20px; background: #A8672E; transform: skewX(-11deg); display: block;"></span>
+            <span style="font-family: 'IBM Plex Mono'; letter-spacing: 0.2em; text-transform: uppercase; font-size: 11px; color: #9C3B2B;">04 · Contact</span>
+          </div>
+          <h2 style="font-family: 'Big Shoulders Display'; font-weight: 700; font-size: clamp(34px, 4.6vw, 54px); line-height: 0.98; margin: 0 0 20px; text-transform: uppercase;">Let's talk about your dog</h2>
+          <p style="font-size: 16.5px; line-height: 1.72; color: #35332b; margin: 0 0 34px;">Tell me what you're working through and I'll help you find the right next step. Reaching out is the best thing you can do — I've been there.</p>
+          <div style="display: flex; flex-direction: column; gap: 22px;">
+            <div>
+              <div style="font-family: 'IBM Plex Mono'; letter-spacing: 0.16em; text-transform: uppercase; font-size: 11px; color: #9C3B2B; margin-bottom: 6px;">Calls welcome any time</div>
+              <a href="tel:8303680790" style="font-family: 'Big Shoulders Display'; font-weight: 700; font-size: 30px; color: #1B1A16;">830-368-0790</a>
+              <p style="font-size: 14.5px; line-height: 1.6; color: #55524a; margin: 6px 0 0;">Prefer to write? A text or the form below reaches me any time — I'll get back to you as soon as I can.</p>
+            </div>
+            <div>
+              <div style="font-family: 'IBM Plex Mono'; letter-spacing: 0.16em; text-transform: uppercase; font-size: 11px; color: #9C3B2B; margin-bottom: 6px;">Hours for reference</div>
+              <div style="font-size: 15.5px; line-height: 1.7; color: #35332b;">Mon–Fri &nbsp;8:00 AM – 6:30 PM<br>Saturday &nbsp;10:00 AM – 6:30 PM<br>Sunday &nbsp;Closed</div>
+            </div>
+            <div>
+              <div style="font-family: 'IBM Plex Mono'; letter-spacing: 0.16em; text-transform: uppercase; font-size: 11px; color: #9C3B2B; margin-bottom: 6px;">Where we are</div>
+              <div style="font-size: 15.5px; line-height: 1.7; color: #35332b;">On a 33-acre property in Texas.<br>Serving the surrounding area.</div>
+            </div>
+          </div>
+        </div>
+
+        <form onSubmit="{{ onSubmit }}" data-r="form" style="background: #fff; padding: 36px; border: 1px solid #d8cfba;">
+          <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+            <div style="padding: 28px; background: #4B5A42; color: #E9E3D4; text-align: center;">
+              <div style="font-family: 'Big Shoulders Display'; font-size: 26px; text-transform: uppercase; margin-bottom: 8px;">Thank you</div>
+              <p style="margin: 0; color: #dcd8c9; font-size: 15px; line-height: 1.6;">Your message is ready to send to Ryan. I'll be in touch as soon as I can.</p>
+            </div>
+          </sc-if>
+          <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <div style="display: flex; flex-direction: column; gap: 18px;">
+            <label style="display: flex; flex-direction: column; gap: 7px; font-family: 'IBM Plex Mono'; letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; color: #55524a;">
+              Name <span style="color: #9C3B2B;">*required</span>
+              <input type="text" required="required" name="name" style="font-family: 'Source Serif 4', serif; font-size: 15px; padding: 12px 14px; background: #f3efe4; border: 1px solid #cabfa6; color: #1B1A16;">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 7px; font-family: 'IBM Plex Mono'; letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; color: #55524a;">
+              Phone Number <span style="color: #9C3B2B;">*required</span>
+              <input type="tel" required="required" name="phone" style="font-family: 'Source Serif 4', serif; font-size: 15px; padding: 12px 14px; background: #f3efe4; border: 1px solid #cabfa6; color: #1B1A16;">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 7px; font-family: 'IBM Plex Mono'; letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; color: #55524a;">
+              Email <span style="color: #8a8578;">optional</span>
+              <input type="email" name="email" style="font-family: 'Source Serif 4', serif; font-size: 15px; padding: 12px 14px; background: #f3efe4; border: 1px solid #cabfa6; color: #1B1A16;">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 7px; font-family: 'IBM Plex Mono'; letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; color: #55524a;">
+              What are you working on? <span style="color: #9C3B2B;">*required</span>
+              <textarea required="required" name="description" rows="4" placeholder="Reactivity, pulling, a new puppy, boarding dates…" style="font-family: 'Source Serif 4', serif; font-size: 15px; padding: 12px 14px; background: #f3efe4; border: 1px solid #cabfa6; color: #1B1A16; resize: vertical;"></textarea>
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 7px; font-family: 'IBM Plex Mono'; letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; color: #55524a;">
+              Best time to reach you <span style="color: #9C3B2B;">*required</span>
+              <input type="text" required="required" name="besttime" placeholder="e.g. weekday mornings" style="font-family: 'Source Serif 4', serif; font-size: 15px; padding: 12px 14px; background: #f3efe4; border: 1px solid #cabfa6; color: #1B1A16;">
+            </label>
+            <button type="submit" disabled="{{ submitting }}" style="{{ buttonStyle }}">{{ submitLabel }}</button>
+            <sc-if value="{{ hasError }}" hint-placeholder-val="{{ false }}">
+              <p style="font-size: 13px; color: #9C3B2B; margin: 0; line-height: 1.55; font-family: 'Source Serif 4', serif; overflow-wrap: anywhere;">Something went wrong sending your message. Please call or text <a href="tel:8303680790" style="color: #9C3B2B; text-decoration: underline;">830-368-0790</a>, or email <a href="mailto:ryan.trailblazerdogacademy@gmail.com" style="color: #9C3B2B; text-decoration: underline;">ryan.trailblazerdogacademy@gmail.com</a>.</p>
+            </sc-if>
+            <p style="font-size: 12px; color: #8a8578; margin: 0; letter-spacing: 0.04em; font-family: 'IBM Plex Mono'; overflow-wrap: anywhere;">Goes to ryan.trailblazerdogacademy@gmail.com</p>
+          </div>
+          </sc-if>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: #1B1A16; color: #8f897b;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 40px 28px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span style="width: 12px; height: 26px; background: #A8672E; transform: skewX(-11deg); display: block;"></span>
+        <span style="font-family: 'Big Shoulders Display'; letter-spacing: 0.08em; text-transform: uppercase; font-size: 16px; color: #E9E3D4;">Trailblazer Dog Academy</span>
+      </div>
+      <div style="display: flex; gap: 22px; font-family: 'IBM Plex Mono'; letter-spacing: 0.1em; text-transform: uppercase; font-size: 12px;">
+        <a href="#" style="color: #cfc8b8;">Instagram</a>
+        <a href="#" style="color: #cfc8b8;">Facebook</a>
+        <a href="#" style="color: #cfc8b8;">YouTube</a>
+      </div>
+      <div style="font-family: 'IBM Plex Mono'; font-size: 12px; letter-spacing: 0.06em;">© {{ year }} · 830-368-0790</div>
+    </div>
+  </footer>
+
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#1B1A16"/><rect x="34" y="30" width="12" height="40" fill="#A8672E" transform="skewX(-11)"/><text x="56" y="62" font-family="Arial, sans-serif" font-weight="800" font-size="34" fill="#E9E3D4">T</text></svg></template>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1200, &quot;height&quot;: 900}}">
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/ryan.trailblazerdogacademy@gmail.com";
+
+class Component extends DCLogic {
+  state = { submitted: false, submitting: false, error: false };
+
+  handleSubmit(e) {
+    e.preventDefault();
+    if (this.state.submitting) return;
+    const form = e.target;
+    const data = new FormData(form);
+    data.append("_subject", "New inquiry — Trailblazer Dog Academy");
+    data.append("_template", "table");
+    data.append("_captcha", "false");
+    this.setState({ submitting: true, error: false });
+    fetch(FORM_ENDPOINT, {
+      method: "POST",
+      headers: { "Accept": "application/json" },
+      body: data
+    })
+      .then((r) => { if (!r.ok) throw new Error("bad status"); return r.json(); })
+      .then(() => this.setState({ submitted: true, submitting: false }))
+      .catch(() => this.setState({ submitting: false, error: true }));
+  }
+
+  renderVals() {
+    const submitting = this.state.submitting;
+    return {
+      year: new Date().getFullYear(),
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      submitting,
+      hasError: this.state.error,
+      submitLabel: submitting ? "Sending…" : "Send to Ryan",
+      buttonStyle: "font-family: 'Big Shoulders Display'; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; font-size: 16px; color: #E9E3D4; background: " + (submitting ? "#7d5647" : "#9C3B2B") + "; border: none; padding: 16px; cursor: " + (submitting ? "wait" : "pointer") + "; margin-top: 4px;",
+      onSubmit: (e) => this.handleSubmit(e)
+    };
+  }
+}
+</script>
+</body>
+</html>
